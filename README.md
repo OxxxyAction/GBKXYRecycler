@@ -6,7 +6,7 @@ Two-way Recycler to display tables or arbitrary custom views.
 
 ## Installation
 Add to the top level gradle file:
-```
+```groovy
 allprojects {
     repositories {
         ...
@@ -16,7 +16,7 @@ allprojects {
 ```
 
 Add to the app level gradle:
-```
+```groovy
 dependencies {
     implementation 'com.github.gbksoft:GBKXYRecycler:v1.0.0'
 }
@@ -31,7 +31,7 @@ dependencies {
 
 ## How to use
 
-```
+```xml
 <com.gbksoft.debugview.xyrecycler.XYRecycler
     android:id="@+id/xyRecycler"
     android:layout_width="match_parent"
@@ -53,7 +53,7 @@ dependencies {
 
 `app:show_horizontal_divider` - show or not to show horizontal dividers
 
-```
+```java
 BaseRecyclerAdapter xyRecyclerAdapter = new XYRecyclerAdapter(getContext());
 layout.xyRecycler.setAdapter(xyRecyclerAdapter);
 xyRecyclerAdapter.setAllItems(
@@ -62,7 +62,7 @@ xyRecyclerAdapter.setAllItems(
         RandomContent.getRandomCellList());
 ```
 
-```
+```java
 public void setAllItems(List<CH> columnHeaderItems, List<RH> rowHeaderItems, List<List<C>> cellItems)
 ```
 
