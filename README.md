@@ -32,7 +32,7 @@ dependencies {
 ## How to use
 
 ```xml
-<com.gbksoft.debugview.xyrecycler.XYRecycler
+<com.gbksoft.XYRecycler
     android:id="@+id/xyRecycler"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
